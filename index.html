@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafejka</title>
+    <title>Cafejejka</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+
 </head>
-<body>
+<body class="container">
+    <header>
+        <h1>Cafejejka</h1>
+    </header>
+    <section>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form data-zamówienie="formularz">
+                    <div class="form-group mt-3">
+                    <label for="zamówienieKawy">Zamówienie</label>
+                    <input class="form-control" name="kawa" id="zamówienieKawy" autofocus>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="daneEmail">Adres e-mail</label>
+                    <input class="form-control" type="email" name="adresEmail"
+                    id="daneEmail" value="" placeholder="jan@kowalski.pl">
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="welkość" value="mała">
+                        Mała
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="welkość" value="średnia">
+                        Średnia
+                    </label>
+                </div>
+                <div class="radio mb-3">
+                    <label>
+                        <input type="radio" name="welkość" value="duża">
+                        Duża
+                    </label>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="smakKawy">Smak</label>
+                    <select id="smakKawy" class="form-select"  name="smak" aria-label="Default select example">
+                        <option value="">Brak</option>
+                        <option value="karmelowelove">karmelowelove</option>
+                        <option value="migdałowy">migdałowy</option>
+                        <option value="czekoladowy">czekoladowy</option>
+</select>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="mocKawy">Moc kawy</label>
+                    <input name ="moc" id="mocKawy" type="range" value="30">
+                </div>
+                <button type="submit" class="btn btn-primary">Wyślij</button>
+                <button type="reset" class="btn btn-secondary">Resetuj</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <script src="skrypty/bazadanych.js"></script>
     <script src="skrypty/furgonetka.js"></script>
+    <script src="skrypty/main.js"></script>
+   
 </body>
 </html>
