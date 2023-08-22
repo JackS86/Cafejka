@@ -8,8 +8,8 @@
     }
 
 Furgonetka.prototype.złóżZamówienie = function(zamówienie) {
-    console.log('złożenie zamówienie dla ' + zamówienie.email);
-    this.bazadanych.dodaj(zamówienie.email, zamówienie);
+    console.log('złożenie zamówienie dla ' + zamówienie.adresEmail);
+    this.bazadanych.dodaj(zamówienie.adresEmail, zamówienie);
 };
 Furgonetka.prototype.zrealizujZamówienie = function(idKlienta){
 console.log('zamówienie zrealizowane dla' +  idKlienta);
